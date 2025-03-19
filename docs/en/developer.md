@@ -37,11 +37,10 @@ We assume ADFS 2.0 or greater is used as an IdP.
     - [Allow insecure linking-by-email](#allow-insecure-linking-by-email)
     - [Adjust the requested AuthN contexts](#adjust-the-requested-authn-contexts)
     - [Allow authentication with alternative domains (e.g. subdomains)](#allow-authentication-with-alternative-domains-eg-subdomains)
-    - [Customise Security configuration](#customise-security-configuration)
+    - [Customise SAML configuration Security config](#customise-saml-configuration-security-config)
     - [Create your own SAML configuration for completely custom settings](#create-your-own-saml-configuration-for-completely-custom-settings)
     - [Additional GET Query Params for SAML](#additional-get-query-params-for-saml)
   - [Resources](#resources)
-
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Install the module
@@ -355,9 +354,9 @@ SilverStripe\SAML\Services\SAMLConfiguration:
 ```
 
 
-### Customise Security configuration
+### Customise SAML configuration Security config
 
-You can customise all the SAMLConfiguration Security config options except for `requestedAuthnContext` which is handled by the [`authn_contexts`](#adjust-the-requested-authn-contexts) (see above). 
+You can customise all the SAML Configuration Security config options except for `requestedAuthnContext` which is handled by the [`authn_contexts`](#adjust-the-requested-authn-contexts) (see above). 
 
 ```yaml
 SilverStripe\SAML\Services\SAMLConfiguration:
